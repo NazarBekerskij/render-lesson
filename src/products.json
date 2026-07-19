@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Gaming Laptop",
+    "category": "Electronics",
+    "price": 1450,
+    "rating": 4.8,
+    "inStock": true,
+    "status": "premium"
+  },
+  {
+    "id": 2,
+    "name": "Office Chair",
+    "category": "Furniture",
+    "price": 320,
+    "rating": 4.2,
+    "inStock": false,
+    "status": "sale"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Mouse",
+    "category": "Accessories",
+    "price": 45,
+    "rating": 4.6,
+    "inStock": true,
+    "status": "new"
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Keyboard",
+    "category": "Accessories",
+    "price": 120,
+    "rating": 4.9,
+    "inStock": true,
+    "status": "premium"
+  },
+  {
+    "id": 5,
+    "name": "Coffee Machine",
+    "category": "Home",
+    "price": 560,
+    "rating": 4.4,
+    "inStock": false,
+    "status": "sale"
+  },
+  {
+    "id": 6,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 280,
+    "rating": 4.1,
+    "inStock": true,
+    "status": "popular"
+  },
+  {
+    "id": 7,
+    "name": "Bluetooth Speaker",
+    "category": "Audio",
+    "price": 180,
+    "rating": 3.9,
+    "inStock": false,
+    "status": "limited"
+  },
+  {
+    "id": 8,
+    "name": "Monitor 27\"",
+    "category": "Electronics",
+    "price": 390,
+    "rating": 4.7,
+    "inStock": true,
+    "status": "new"
+  },
+  {
+    "id": 9,
+    "name": "Backpack",
+    "category": "Travel",
+    "price": 85,
+    "rating": 4.0,
+    "inStock": true,
+    "status": "standard"
+  },
+  {
+    "id": 10,
+    "name": "Desk Lamp",
+    "category": "Home",
+    "price": 65,
+    "rating": 3.8,
+    "inStock": false,
+    "status": "clearance"
+  }
+]
