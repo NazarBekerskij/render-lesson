@@ -1,18 +1,49 @@
-import './App.css'
-import clsx from 'clsx';
-import products from './products.json'
+import './App.css';
+import { Component } from "react";
 
-import List from './components/List/List'
+// const message = "Hello World";
 
-function App() {
 
-  return (
-    <>
-    
-   <List products={products}/>
+class App extends Component {
+  state = {
+    user: 0,
+  }
 
-    </>
-  )
+ 
+  
+
+
+
+handleMinus = () => {
+  this.setState((prev) => {
+    return {
+      count: prev.count - 1
+    };
+  });
+}
+  
+
+handlePluse = () => {
+  this.setState((prev) => {
+    return {
+      count: prev.count + 1
+    }
+  })
 }
 
-export default App
+  
+
+  render() {
+
+
+    return (
+      <>
+      <p>{this.state.count}</p>
+      <button  onClick={this.handleMinus} type='button'>minus</button>
+      <button  onClick={this.handlePluse} type='button'>pluse</button>
+      </>
+    );
+  }
+}
+
+export default App;
