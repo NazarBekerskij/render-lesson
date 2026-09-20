@@ -1,49 +1,42 @@
 import './App.css';
 import { Component } from "react";
 
-// const message = "Hello World";
+
+import user from "./user.json"
+// import Title from './components/Title/Title';
+// import UserList from './components/List/UserList';
 
 
-class App extends Component {
+class App extends Component{
   state = {
-    user: 0,
+   user,
   }
 
- 
-  
 
+  handleDeleteUser = (id) => {
+    this.setState(prev => ({
+      user: prev.user.filter((item => item.id !== id))
+    }))
+  }
 
+  render(){
 
-handleMinus = () => {
-  this.setState((prev) => {
-    return {
-      count: prev.count - 1
-    };
-  });
-}
-  
-
-handlePluse = () => {
-  this.setState((prev) => {
-    return {
-      count: prev.count + 1
-    }
-  })
-}
-
-  
-
-  render() {
-
+    const {user} = this.state
 
     return (
       <>
-      <p>{this.state.count}</p>
-      <button  onClick={this.handleMinus} type='button'>minus</button>
-      <button  onClick={this.handlePluse} type='button'>pluse</button>
+    <ul>{user.map(({id, name, price, category}) => 
+                <li key={id}>
+                    <p>{name}</p>
+                    <p>{price}</p>
+                    <p>{category}</p>
+                    <button onClick={() => this.handleDeleteUser(id)} type="button">Видалити</button>
+                </li>
+            )}</ul>
       </>
-    );
+    )
   }
-}
+} 
+
 
 export default App;
